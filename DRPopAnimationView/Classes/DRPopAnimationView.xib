@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eqS-ka-xVP" customClass="DRPopAnimationView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTd-FY-vXZ" customClass="JXAlertContainerView">
+                    <rect key="frame" x="32.5" y="326" width="310" height="16.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="category_bg_top" translatesAutoresizingMaskIntoConstraints="NO" id="Thk-nQ-RnA">
+                            <rect key="frame" x="0.0" y="-8" width="310" height="25"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rak-Pt-Lb0">
+                            <rect key="frame" x="0.0" y="-33.5" width="310" height="1"/>
+                            <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="3bU-eb-zRQ"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NG0-cq-TpV">
+                            <rect key="frame" x="0.0" y="-33.5" width="310" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="mbx-sW-Klv"/>
+                            </constraints>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="温馨提示" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbi-rx-Oq8">
+                            <rect key="frame" x="126.5" y="-4" width="57.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="NG0-cq-TpV" firstAttribute="top" secondItem="Rak-Pt-Lb0" secondAttribute="top" id="36h-5P-bAI"/>
+                        <constraint firstItem="gbi-rx-Oq8" firstAttribute="centerX" secondItem="VTd-FY-vXZ" secondAttribute="centerX" id="3Ci-WX-J3C"/>
+                        <constraint firstItem="Rak-Pt-Lb0" firstAttribute="leading" secondItem="VTd-FY-vXZ" secondAttribute="leading" id="5i7-Jg-34Q"/>
+                        <constraint firstAttribute="bottom" secondItem="NG0-cq-TpV" secondAttribute="bottom" id="78h-X4-3go"/>
+                        <constraint firstAttribute="trailing" secondItem="NG0-cq-TpV" secondAttribute="trailing" id="IWx-nf-mJl"/>
+                        <constraint firstItem="NG0-cq-TpV" firstAttribute="leading" secondItem="VTd-FY-vXZ" secondAttribute="leading" id="JTR-jU-j3u"/>
+                        <constraint firstItem="Thk-nQ-RnA" firstAttribute="centerX" secondItem="VTd-FY-vXZ" secondAttribute="centerX" id="cB9-2s-vtu"/>
+                        <constraint firstAttribute="bottom" secondItem="Thk-nQ-RnA" secondAttribute="bottom" id="chV-SW-MsA"/>
+                        <constraint firstItem="gbi-rx-Oq8" firstAttribute="top" secondItem="VTd-FY-vXZ" secondAttribute="top" constant="-4" id="gNQ-wj-7h2"/>
+                        <constraint firstItem="Thk-nQ-RnA" firstAttribute="leading" secondItem="VTd-FY-vXZ" secondAttribute="leading" id="gby-0r-ucl"/>
+                        <constraint firstAttribute="trailing" secondItem="Rak-Pt-Lb0" secondAttribute="trailing" id="hKC-51-Pyu"/>
+                        <constraint firstAttribute="width" constant="310" id="m6i-qw-1NW"/>
+                        <constraint firstItem="Thk-nQ-RnA" firstAttribute="top" secondItem="VTd-FY-vXZ" secondAttribute="top" constant="-8" id="rse-7x-uZJ"/>
+                        <constraint firstAttribute="trailing" secondItem="Thk-nQ-RnA" secondAttribute="trailing" id="wrV-8M-tZP"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axJ-ba-nnW">
+                    <rect key="frame" x="169" y="382.5" width="37" height="37"/>
+                    <state key="normal" image="icon_popup_close_nor"/>
+                    <connections>
+                        <action selector="closeWindow:" destination="eqS-ka-xVP" eventType="touchUpInside" id="HyD-72-raA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VTd-FY-vXZ" firstAttribute="centerY" secondItem="eqS-ka-xVP" secondAttribute="centerY" id="KuA-4Z-XjX"/>
+                <constraint firstItem="VTd-FY-vXZ" firstAttribute="centerX" secondItem="eqS-ka-xVP" secondAttribute="centerX" id="SOV-8C-Ty8"/>
+                <constraint firstItem="axJ-ba-nnW" firstAttribute="centerX" secondItem="eqS-ka-xVP" secondAttribute="centerX" id="W8F-RO-eKj"/>
+                <constraint firstItem="axJ-ba-nnW" firstAttribute="top" secondItem="VTd-FY-vXZ" secondAttribute="bottom" constant="40" id="r5S-Ug-8bR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="s0c-XY-B4O"/>
+            <connections>
+                <outlet property="closeButton" destination="axJ-ba-nnW" id="r68-cS-Eps"/>
+                <outlet property="containerView" destination="VTd-FY-vXZ" id="BLV-qg-nsr"/>
+                <outlet property="stackView" destination="NG0-cq-TpV" id="CxJ-RZ-4Jo"/>
+                <outlet property="stackViewBottom" destination="78h-X4-3go" id="X7O-TT-LhJ"/>
+                <outlet property="stackViewHeight" destination="mbx-sW-Klv" id="8dI-ux-On5"/>
+            </connections>
+            <point key="canvasLocation" x="102.5" y="69.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="category_bg_top" width="281" height="25"/>
+        <image name="icon_popup_close_nor" width="37" height="37"/>
+    </resources>
+</document>

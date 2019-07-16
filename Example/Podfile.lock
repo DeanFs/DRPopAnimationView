@@ -1,0 +1,45 @@
+PODS:
+  - DRMacroDefines (0.1.2)
+  - DRPopAnimationView (0.1.0):
+    - DRMacroDefines
+    - JXExtension
+    - Masonry
+  - JXExtension (0.4.0):
+    - JXExtension/Category (= 0.4.0)
+    - JXExtension/Transition (= 0.4.0)
+    - JXExtension/View (= 0.4.0)
+    - SDVersion
+  - JXExtension/Category (0.4.0):
+    - SDVersion
+  - JXExtension/Transition (0.4.0):
+    - SDVersion
+  - JXExtension/View (0.4.0):
+    - JXExtension/Category
+    - SDVersion
+  - Masonry (1.1.0)
+  - SDVersion (4.3.2)
+
+DEPENDENCIES:
+  - DRPopAnimationView (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DRMacroDefines
+    - JXExtension
+    - Masonry
+    - SDVersion
+
+EXTERNAL SOURCES:
+  DRPopAnimationView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DRMacroDefines: 58aa271bc1c4170fa09f4f33dcad18fc4f21a57e
+  DRPopAnimationView: 38b855b928395168b2c9396ead0dfaa89424a8cf
+  JXExtension: c625f6881ae43cb7bbf97d49c0b2202f8f1de898
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDVersion: 18f32c835c1543611fcfae3c6accd9a04b90597e
+
+PODFILE CHECKSUM: c0cf3ac65e0b45eb11a9a1c5ca2eab095a0c61ce
+
+COCOAPODS: 1.6.1
